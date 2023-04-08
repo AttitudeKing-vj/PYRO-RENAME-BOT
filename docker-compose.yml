@@ -1,1 +1,14 @@
-
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_HASH: $API_HASH
+      API_ID: $API_ID
+      BOT_TOKEN: $BOT_TOKEN
+      ADMIN: $ADMIN
+      FORCE_SUB: $FORCE_SUB
+      START_PIC: $START_PIC
+      DB_URL: $DB_URL
+      DB_NAME: $DB_NAME
+      WEBHOOK: $WEBHOOK
